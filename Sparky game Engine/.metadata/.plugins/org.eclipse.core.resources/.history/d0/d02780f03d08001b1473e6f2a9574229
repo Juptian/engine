@@ -1,0 +1,33 @@
+#include <iostream>
+
+
+//PreDefs
+void NomegaLUL();
+void NomegaLUL(int& intPrinted);
+void NomegaLUL(int ok);
+void NomegaLUL(char* ok);
+
+int main()
+{
+	std::cout << "no\n";
+	system("PAUSE");
+	std::cin.get();
+}
+
+void NomegaLUL()
+{
+
+}
+
+void NomegaLUL(int& intPrinted)
+{
+
+}
+void NomegaLUL(int ok)
+{
+
+}
+void NomegaLUL(char* ok)
+{
+
+}

@@ -1,0 +1,8 @@
+#include <iostream>
+
+int main()
+{
+	std::cout << "no\n";
+	system("PAUSE");
+	std::cin.get();
+}
