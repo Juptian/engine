@@ -34,6 +34,7 @@
 # Other
 *.tlog
 *.log
+*.recipe
 *.metadata
 
 
