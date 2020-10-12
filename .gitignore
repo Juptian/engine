@@ -35,6 +35,8 @@
 *.tlog
 *.log
 *.recipe
+*.core
+*.ui
 *.metadata
 
 
