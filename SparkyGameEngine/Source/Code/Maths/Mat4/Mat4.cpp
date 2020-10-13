@@ -76,7 +76,7 @@ namespace sparky {
 		{
 			mat4 result(1.0f);
 
-			//Mafs
+			//Maths
 			float q = 1.0f / tan(ToRadians(0.5f * fov));
 			float  a = q / aspectRatio;
 
