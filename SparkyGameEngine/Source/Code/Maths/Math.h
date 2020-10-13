@@ -17,4 +17,4 @@ namespace sparky
 	} // namespace Math
 } // namespace sparky
 
-using namespace Math;
+using namespace sparky::Math;

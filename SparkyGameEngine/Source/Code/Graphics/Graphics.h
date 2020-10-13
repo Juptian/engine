@@ -7,4 +7,5 @@
 #include "Buffers\IndexBuffer.h"
 #include "Buffers\VertexArray.h"
 
-using namespace graphics;
+
+using namespace sparky::graphics;
