@@ -4,7 +4,7 @@
 #define Mat4 mat4
 
 #include "..\Math.h"
-#include <math.h>
+#include <Math.h>
 
 namespace sparky {
 	namespace Math {

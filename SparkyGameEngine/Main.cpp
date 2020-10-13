@@ -93,7 +93,7 @@ int main()
 	shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(4, 3, 0)));
 
 	//shader.SetUniform2f("light_pos", vec2(4.0f, 1.5f));
-	shader.SetUniform4f("colour", vec4(0.3f, 0.7f, 1.0f, 1.0f));
+	shader.SetUniform4f("color", vec4(0.3f, 0.7f, 1.0f, 1.0f));
 
 
 	while (!window.Closed())

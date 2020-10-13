@@ -19,7 +19,7 @@ namespace sparky {
 			this->z = z;
 			this->w = w;
 		}
-		//Maths
+		//Math
 		vec4& vec4::add(const vec4& other)
 		{
 			x += other.x;

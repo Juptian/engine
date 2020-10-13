@@ -83,7 +83,7 @@ namespace sparky {
 			float b = (near + far) / (near - far);
 			float c = (2.0f * near * far) / (near - far);
 
-			//Applying those maths
+			//Applying those Maths
 			result.elements[0 + 0 * 4] = a;
 			result.elements[1 + 1 * 4] = q;
 			result.elements[2 + 2 * 4] = b;
@@ -118,19 +118,19 @@ namespace sparky {
 			float z = axis.z;
 
 			//Colum 1
-			result.elements[0 + 0 * 4] = x * omc + c; //good
-			result.elements[1 + 0 * 4] = y * x * omc + z * s; //good
-			result.elements[2 + 0 * 4] = x * z * omc - y * s; //good
+			result.elements[0 + 0 * 4] = x * omc + c;
+			result.elements[1 + 0 * 4] = y * x * omc + z * s;
+			result.elements[2 + 0 * 4] = x * z * omc - y * s;
 
 			//Colum 2
-			result.elements[0 + 1 * 4] = x * y * omc - z * s; //good
-			result.elements[1 + 1 * 4] = y * omc + c; //good
-			result.elements[2 + 1 * 4] = y * z * omc + x * s; //good
+			result.elements[0 + 1 * 4] = x * y * omc - z * s;
+			result.elements[1 + 1 * 4] = y * omc + c;
+			result.elements[2 + 1 * 4] = y * z * omc + x * s;
 
 			//Colum 3
-			result.elements[0 + 2 * 4] = x * z * omc + y * s; //good
-			result.elements[1 + 2 * 4] = y * z * omc - x * s; //good
-			result.elements[2 + 2 * 4] = z * omc + c; //
+			result.elements[0 + 2 * 4] = x * z * omc + y * s;
+			result.elements[1 + 2 * 4] = y * z * omc - x * s;
+			result.elements[2 + 2 * 4] = z * omc + c;
 
 			return result;
 		}
