@@ -66,7 +66,6 @@ namespace sparky {
 				return false;
 			}
 
-			//std::cout << "OpenGL version " << glGetString(GL_VERSION) << std::endl;
 
 			return true;
 		}
@@ -74,6 +73,12 @@ namespace sparky {
 		//Update and close
 		void Window::Update()
 		{
+			GLenum error = glGetError();
+			if (error != GL_NO_ERROR)
+			{
+				std::cout << "OpenGL Error: " << error << "\n";
+			}
+
 			glfwPollEvents();
 			glfwSwapBuffers(m_Window);
 		}

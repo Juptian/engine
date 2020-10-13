@@ -1,6 +1,7 @@
 #pragma once
 
 #define _USE_MATH_DEFINES
+#define Mat4 mat4
 
 #include "..\Math.h"
 #include <math.h>

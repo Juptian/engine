@@ -102,7 +102,7 @@ namespace sparky {
 		//Outputting
 		std::ostream& operator<<(std::ostream& stream, const vec4& vector)
 		{
-			stream << "vec4 (" << vector.x << ", " << vector.y << ", " << vector.z << ", " << vector.w << ")";
+			stream << "Vector4 (" << vector.x << ", " << vector.y << ", " << vector.z << ", " << vector.w << ")";
 			return stream;
 		}
 	}

@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\GLFW\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\GLEW\Lib;$(SolutionDir)Dependencies\GLFW\lib-vc2019;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)thirdparty\Dependencies\GLEW\include;$(SolutionDir)thirdparty\Dependencies\GLFW\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\Dependencies\GLEW\Lib;$(SolutionDir)thirdparty\Dependencies\GLFW\lib-vc2019;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>
   </PropertyGroup>
@@ -145,6 +145,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\Code\Graphics\Buffers\Buffer.cpp" />
+    <ClCompile Include="Source\Code\Graphics\Buffers\IndexBuffer.cpp" />
+    <ClCompile Include="Source\Code\Graphics\Buffers\VertexArray.cpp" />
     <ClCompile Include="Source\Code\Graphics\Shader.cpp" />
     <ClCompile Include="Source\Code\Graphics\Window.cpp" />
     <ClCompile Include="Source\Code\Maths\Mat4\Mat4.cpp" />
@@ -153,6 +156,9 @@
     <ClCompile Include="Source\Code\Maths\Vectors\Vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Code\Graphics\Buffers\Buffer.h" />
+    <ClInclude Include="Source\Code\Graphics\Buffers\IndexBuffer.h" />
+    <ClInclude Include="Source\Code\Graphics\Buffers\VertexArray.h" />
     <ClInclude Include="Source\Code\Graphics\Graphics.h" />
     <ClInclude Include="Source\Code\Graphics\Shader.h" />
     <ClInclude Include="Source\Code\Graphics\Window.h" />

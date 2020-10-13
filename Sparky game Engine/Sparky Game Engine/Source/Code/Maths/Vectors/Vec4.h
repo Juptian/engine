@@ -1,6 +1,10 @@
 #pragma once
 #include <iostream>
 
+#define Vector4 vec4
+#define vector4 vec4
+#define Vec4 vec4
+
 namespace sparky {
 	namespace Math {
 		struct vec4
