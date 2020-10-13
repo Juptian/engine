@@ -95,13 +95,18 @@ int main()
 	//shader.SetUniform2f("light_pos", vec2(4.0f, 1.5f));
 	shader.SetUniform4f("color", vec4(0.3f, 0.7f, 1.0f, 1.0f));
 
+	bool lightFollow = true;
 
 	while (!window.Closed())
 	{
 		window.Clear();
-		double x, y;
-		window.GetMousePosition(x, y);
-		shader.SetUniform2f("light_pos", vec2(float(x * 16.0f / 960.0f), float(9.0f - y * 9.0f / 540.0f)));
+		lightFollow = !window.IsMouseButtonPressed(GLFW_MOUSE_BUTTON_1);
+		if (lightFollow)
+		{
+			double x, y;
+			window.GetMousePosition(x, y);
+			shader.SetUniform2f("light_pos", vec2(float(x * 16.0f / 960.0f), float(9.0f - y * 9.0f / 540.0f)));
+		}
 #if 0
 		glDrawArrays(GL_TRIANGLES, 0, 6);
 #else

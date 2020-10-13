@@ -9,9 +9,12 @@
 #include "Mat4\Mat4.h"
 
 //General defines
-namespace sparky {
-	namespace Math {
+namespace sparky
+{
+	namespace Math
+	{
 		inline float ToRadians(float degrees) { return degrees * float(M_PI / 180.f); }
-	}
-}
+	} // namespace Math
+} // namespace sparky
 
+using namespace Math;
