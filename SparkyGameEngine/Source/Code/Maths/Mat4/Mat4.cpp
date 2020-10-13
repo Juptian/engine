@@ -1,7 +1,7 @@
 #include "Mat4.h"
 #include "../Math.h"
 
-namespace sparky {
+namespace Sparky {
 	namespace Math {
 		mat4::mat4()
 		{

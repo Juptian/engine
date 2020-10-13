@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-namespace sparky
+namespace Sparky
 {
 	class FileUtils
 	{

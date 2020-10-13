@@ -1,6 +1,6 @@
 #include "Vec4.h"
 
-namespace sparky {
+namespace Sparky {
 	namespace Math {
 		//Constructors
 		/*

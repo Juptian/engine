@@ -15,8 +15,8 @@ To access that data, you need to dereference it
 
 int main()
 {
-	using namespace sparky;
-	using namespace graphics;
+	using namespace Sparky;
+	using namespace Graphics;
 	using namespace Math;
 
 	Window window("Sparky", 960, 540);
@@ -73,14 +73,31 @@ int main()
 		0.2f, 0.3f, 0.8f, 1.0f
 	};
 
-	VertexArray sprite1, sprite2; 
+	GLfloat colorsC[] =
+	{
+		0, 1, 0, 1,
+		0, 1, 0, 1,
+		0, 1, 0, 1,
+		0, 1, 0, 1
+	};
+
+	VertexArray sprite1, sprite2, sprite3, sprite4, sprite5; 
 	IndexBuffer ibo(indices, 6);
 
 	sprite1.AddBuffer(new Buffer(vertices, 4 * 3, 3), 0);
-	sprite1.AddBuffer(new Buffer(colorsA, 4 * 4, 4), 1);
+	sprite1.AddBuffer(new Buffer(colorsC, 4 * 4, 4), 1);
 
 	sprite2.AddBuffer(new Buffer(vertices, 4 * 3, 3), 0);
 	sprite2.AddBuffer(new Buffer(colorsB, 4 * 4, 3), 1);
+
+	sprite3.AddBuffer(new Buffer(vertices, 4 * 3, 3), 0);
+	sprite3.AddBuffer(new Buffer(colorsC, 4 * 4, 3), 1);
+
+	sprite4.AddBuffer(new Buffer(vertices, 4 * 3, 3), 0);
+	sprite4.AddBuffer(new Buffer(colorsB, 4 * 4, 3), 1);
+
+	sprite5.AddBuffer(new Buffer(vertices, 4 * 3, 3), 0);
+	sprite5.AddBuffer(new Buffer(colorsC, 4 * 4, 3), 1);
 
 #endif
 
@@ -92,8 +109,7 @@ int main()
 	shader.SetUniformMat4("pr_matrix", ortho);
 	shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(4, 3, 0)));
 
-	//shader.SetUniform2f("light_pos", vec2(4.0f, 1.5f));
-	shader.SetUniform4f("color", vec4(0.3f, 0.7f, 1.0f, 1.0f));
+	shader.SetUniform4f("color", vec4(1, 1, 1, 1)); // vec4(0.3f, 0.7f, 1.0f, 1.0f)
 
 	bool lightFollow = true;
 
@@ -110,6 +126,7 @@ int main()
 #if 0
 		glDrawArrays(GL_TRIANGLES, 0, 6);
 #else
+		//Sprite 1
 		sprite1.Bind();
 		ibo.Bind();
 		shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(4, 3, 0)));
@@ -117,12 +134,36 @@ int main()
 		ibo.Bind();
 		sprite1.Unbind();
 
+		//Sprite2
 		sprite2.Bind();
 		ibo.Bind();
 		shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(0, 0, 0)));
 		glDrawElements(GL_TRIANGLES, ibo.GetCount(), GL_UNSIGNED_SHORT, 0);
-
 		sprite2.Unbind();
+		ibo.Unbind();
+
+		//Sprite3
+		sprite3.Bind();
+		ibo.Bind();
+		shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(8, 6, 0)));
+		glDrawElements(GL_TRIANGLES, ibo.GetCount(), GL_UNSIGNED_SHORT, 0);
+		sprite3.Unbind();
+		ibo.Unbind();
+
+		//Sprite4
+		sprite4.Bind();
+		ibo.Bind();
+		shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(8, 0, 0)));
+		glDrawElements(GL_TRIANGLES, ibo.GetCount(), GL_UNSIGNED_SHORT, 0);
+		sprite4.Unbind();
+		ibo.Unbind();
+
+		//Sprite
+		sprite5.Bind();
+		ibo.Bind();
+		shader.SetUniformMat4("ml_matrix", mat4::Translation(vec3(0, 6, 0)));
+		glDrawElements(GL_TRIANGLES, ibo.GetCount(), GL_UNSIGNED_SHORT, 0);
+		sprite5.Unbind();
 		ibo.Unbind();
 #endif
 		window.Update();

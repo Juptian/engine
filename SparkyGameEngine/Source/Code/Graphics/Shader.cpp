@@ -1,9 +1,9 @@
 #include "Shader.h"
 
-namespace sparky
+namespace Sparky
 {
 	//std::string Read_File(const char* filePath);
-	namespace graphics
+	namespace Graphics
 	{
 		Shader::Shader(const char* vertPath, const char* fragPath)
 			: m_VertPath(vertPath), m_FragPath(fragPath)

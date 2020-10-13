@@ -1,7 +1,7 @@
 #include "Window.h"
 
-namespace sparky {
-	namespace graphics {
+namespace Sparky {
+	namespace Graphics {
 		//Functions
 		void Window_Resize(GLFWwindow* window, int width, int height);
 		void Key_Callback(GLFWwindow* window, int key, int scancode, int action, int mods);

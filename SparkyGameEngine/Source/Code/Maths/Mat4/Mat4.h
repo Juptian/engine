@@ -6,7 +6,7 @@
 #include "..\Math.h"
 #include <Math.h>
 
-namespace sparky {
+namespace Sparky {
 	namespace Math {
 
 		struct mat4

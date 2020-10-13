@@ -5,7 +5,7 @@
 #define vector3 vec3
 #define Vec3 vec3
 
-namespace sparky {
+namespace Sparky {
 	namespace Math {
 		struct vec3
 		{

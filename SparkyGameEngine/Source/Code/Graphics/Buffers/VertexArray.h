@@ -8,9 +8,9 @@
 #include <vector>
 #include <GL\glew.h>
 
-namespace sparky
+namespace Sparky
 {
-	namespace graphics
+	namespace Graphics
 	{
 		class VertexArray
 		{

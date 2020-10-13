@@ -6,8 +6,8 @@
 
 #include <GL\glew.h>
 
-namespace sparky {
-	namespace graphics
+namespace Sparky {
+	namespace Graphics
 	{
 		class IndexBuffer
 		{

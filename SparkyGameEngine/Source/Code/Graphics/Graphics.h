@@ -8,4 +8,4 @@
 #include "Buffers\VertexArray.h"
 
 
-using namespace sparky::graphics;
+using namespace Sparky::Graphics;

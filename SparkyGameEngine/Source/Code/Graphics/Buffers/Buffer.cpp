@@ -1,8 +1,8 @@
 #include "Buffer.h"
 
-namespace sparky
+namespace Sparky
 {
-	namespace graphics
+	namespace Graphics
 	{
 		Buffer::Buffer(GLfloat* data, GLsizei count, GLuint componentCount)
 			: m_ComponentCount(componentCount)

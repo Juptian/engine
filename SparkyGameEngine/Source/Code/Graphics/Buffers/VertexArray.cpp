@@ -1,8 +1,8 @@
 #include "VertexArray.h"
 
-namespace sparky
+namespace Sparky
 {
-	namespace graphics 
+	namespace Graphics 
 	{
 		VertexArray::VertexArray()
 		{

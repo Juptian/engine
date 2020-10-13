@@ -5,7 +5,7 @@
 #define vector4 vec4
 #define Vec4 vec4
 
-namespace sparky {
+namespace Sparky {
 	namespace Math {
 		struct vec4
 		{

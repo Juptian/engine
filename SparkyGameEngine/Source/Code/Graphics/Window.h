@@ -4,9 +4,9 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-namespace sparky
+namespace Sparky
 {
-	namespace graphics
+	namespace Graphics
 	{
 		#define MAX_KEYS 1024
 		#define MAX_BUTTONS 32
