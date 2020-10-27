@@ -9,6 +9,12 @@ namespace Sparky
 	{
 	public:
 		//This works lets not touch it now thank you
+
+		/*
+		* Read_File(const char* filePath)
+		* @param filePath Path to the file of which to read
+		* @return Returns file contents
+		*/
 		static std::string Read_File(const char* filePath)
 		{
 			FILE* file = fopen(filePath, "rt"); //RT means read text

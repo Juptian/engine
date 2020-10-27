@@ -40,8 +40,25 @@ namespace Sparky {
 			static mat4 Perspective(float fov, float aspectRatio, float near, float far);
 
 			//Translation Matricies
+
+			/*
+			* Translation(const Vector3& translation)
+			* @param translation Vector3& of which you'd like to translate an object
+			* @return Mat4 of the translation
+			*/
 			static mat4 Translation(const vec3& translation);
+			
+			/*
+			* Rotation(float angle, const Vector3& axis)
+			* @param angle Angle that you would like to rotate by (float)
+			* @param axis Vector3 containing the axis of rotation
+			*/
 			static mat4 Rotation(float angle, const vec3& axis);
+
+			/*
+			* Scale(const Vector3& scale)
+			* @param scale Scale (vector3) of which you'd like scale the axis
+			*/
 			static mat4 Scale(const vec3& scale);
 			
 		private:

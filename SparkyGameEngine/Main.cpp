@@ -123,9 +123,8 @@ int main()
 			window.GetMousePosition(x, y);
 			shader.SetUniform2f("light_pos", vec2(float(x * 16.0f / 960.0f), float(9.0f - y * 9.0f / 540.0f)));
 		}
-#if 0
-		glDrawArrays(GL_TRIANGLES, 0, 6);
-#else
+		//glDrawArrays(GL_TRIANGLES, 0, 6);
+
 		//Sprite 1
 		sprite1.Bind();
 		ibo.Bind();
@@ -165,7 +164,7 @@ int main()
 		glDrawElements(GL_TRIANGLES, ibo.GetCount(), GL_UNSIGNED_SHORT, 0);
 		sprite5.Unbind();
 		ibo.Unbind();
-#endif
+
 		window.Update();
 	}
 	return 0;
