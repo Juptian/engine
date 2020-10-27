@@ -24,6 +24,14 @@ namespace Sparky
 			VertexArray();
 			~VertexArray();
 
+			/*
+			* AddBuffer(Buffer* buffer, GLuint index)
+			* @param buffer 
+			* A `Buffer` pointer to add to the vertex array
+			* 
+			* @param index 
+			* Index of the which you would like to in the vertex path
+			*/
 			void AddBuffer(Buffer* buffer, GLuint index);
 			void Bind() const;
 			void Unbind() const;

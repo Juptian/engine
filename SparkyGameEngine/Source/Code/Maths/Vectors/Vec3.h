@@ -19,16 +19,19 @@ namespace Sparky {
 
 			/*
 			* Vector3()
-			* Vector 3 constructor where the X, Y, and Z values are set to 0
+			* Vector 3 constructor where the `X`, `Y`, and `Z` values are set to 0
 			*/
 			vec3();
 
 			/*
 			* Vector3(const float& x, const float& y, const float& z)
-			* Vector 3 constructor where you can assign the X, Y, and Z values
-			* @param x Value of the X axis
-			* @param y Value of the Y axis
-			* @param z Value of the Z axis
+			* Vector 3 constructor where you can assign the `X`, `Y`, and `Z` values
+			* @param `x` 
+			* Value of the `X` axis
+			* @param `y` 
+			* Value of the `Y` axis
+			* @param `z` 
+			* Value of the `Z` axis
 			*/
 			vec3(const float& x, const float& y, const float& z);
 			
