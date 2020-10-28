@@ -1,5 +1,4 @@
-#include "Mat4.h"
-#include "../Math.h"
+#include "..\..\..\Header\Maths\Mat4\Mat4.h"
 
 namespace Sparky {
 	namespace Math {

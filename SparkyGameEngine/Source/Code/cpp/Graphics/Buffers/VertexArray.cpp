@@ -1,4 +1,4 @@
-#include "VertexArray.h"
+#include "..\..\..\Header\Graphics\Buffers\VertexArray.h"
 
 namespace Sparky
 {

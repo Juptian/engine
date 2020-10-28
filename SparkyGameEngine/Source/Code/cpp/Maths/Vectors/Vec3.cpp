@@ -1,4 +1,4 @@
-#include "Vec3.h"
+#include "..\..\..\Header\Maths\Vectors\Vec3.h"
 
 namespace Sparky {
 	namespace Math {

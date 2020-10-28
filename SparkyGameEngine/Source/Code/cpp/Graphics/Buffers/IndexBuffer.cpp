@@ -1,4 +1,4 @@
-#include "IndexBuffer.h"
+#include "..\..\..\Header\Graphics\Buffers\IndexBuffer.h"
 
 namespace Sparky
 {

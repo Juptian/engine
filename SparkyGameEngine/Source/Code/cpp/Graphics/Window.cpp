@@ -1,4 +1,4 @@
-#include "Window.h"
+#include "..\..\Header\Graphics\Window.h"
 
 namespace Sparky {
 	namespace Graphics {

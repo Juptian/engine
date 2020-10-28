@@ -1,4 +1,4 @@
-#include "Buffer.h"
+#include "..\..\..\Header\Graphics\Buffers\Buffer.h"
 
 namespace Sparky
 {
