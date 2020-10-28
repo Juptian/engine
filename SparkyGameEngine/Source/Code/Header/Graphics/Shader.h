@@ -24,6 +24,7 @@ namespace Sparky
 
 			/*
 			* Shader(const char* vertPath, const char* fragPath)
+			* Creates a shader!
 			* 
 			* @param vertPath  Path to the vertex file
 			* 
@@ -35,6 +36,7 @@ namespace Sparky
 
 			/*
 			* SetUniform1f(const GLChar* name, float value)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
@@ -45,6 +47,7 @@ namespace Sparky
 
 			/*
 			* SetUniform1i(const GLChar* name, int value)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
@@ -54,7 +57,8 @@ namespace Sparky
 
 
 			/*
-			* SetUniform2f(const GLChar* name, const Math::Vector2 vector)
+			* SetUniform2f(const GLChar* name, const Vector2 vector)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
@@ -62,11 +66,12 @@ namespace Sparky
 			* 
 			* @see Vector2
 			*/
-			void SetUniform2f(const GLchar* name, const Math::vec2 vector);
+			void SetUniform2f(const GLchar* name, const vec2 vector);
 
 
 			/*
-			* SetUniform3f(const GLChar* name, const Math::Vector3 vector)
+			* SetUniform3f(const GLChar* name, const Vector3 vector)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
@@ -74,11 +79,12 @@ namespace Sparky
 			* 
 			* @see Vector3
 			*/
-			void SetUniform3f(const GLchar* name, const Math::vec3 vector);
+			void SetUniform3f(const GLchar* name, const vec3 vector);
 			
 
 			/*
-			* SetUniform4f(const GLChar* name, const Math::Vector4 vector)
+			* SetUniform4f(const GLChar* name, const Vector4 vector)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
@@ -86,17 +92,18 @@ namespace Sparky
 			* 
 			* @see Vector4
 			*/
-			void SetUniform4f(const GLchar* name, const Math::vec4 vector);
+			void SetUniform4f(const GLchar* name, const vec4 vector);
 
 
 			/*
 			* SetUniformMat4(const GLchar* name, const Math::mat4& matrix)
+			* Sets the uniform in a shader
 			* 
 			* @param name Name of the uniform.
 			* 
 			* @param matrix A matrix reference for which you'd like to assign the uniform.
 			*/
-			void SetUniformMat4(const GLchar* name, const Math::mat4& matrix);
+			void SetUniformMat4(const GLchar* name, const mat4& matrix);
 
 			void Enable() const;
 			void Disable() const;

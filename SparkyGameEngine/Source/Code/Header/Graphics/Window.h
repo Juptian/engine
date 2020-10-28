@@ -14,6 +14,7 @@ namespace Sparky
 		#define MAX_BUTTONS 32
 		class Window
 		{
+			#define Mouse_Button_1 GLFW_MOUSE_BUTTON_ONE
 		//Variables
 		public:
 		private:

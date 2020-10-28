@@ -24,31 +24,37 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Maths\Math4\Mat4.cpp">
+    <ClCompile Include="Source\Code\cpp\Graphics\Buffers\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Maths\Vectors\Vec4.cpp">
+    <ClCompile Include="Source\Code\cpp\Graphics\Buffers\IndexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Maths\Vectors\Vec3.cpp">
+    <ClCompile Include="Source\Code\cpp\Graphics\Buffers\VertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Maths\Vectors\Vec2.cpp">
+    <ClCompile Include="Source\Code\cpp\Graphics\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Graphics\Shader.cpp">
+    <ClCompile Include="Source\Code\cpp\Graphics\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Graphics\Window.cpp">
+    <ClCompile Include="Source\Code\cpp\Maths\Math4\Mat4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Graphics\Buffers\Buffer.cpp">
+    <ClCompile Include="Source\Code\cpp\Maths\Vectors\Vec2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Graphics\Buffers\IndexBuffer.cpp">
+    <ClCompile Include="Source\Code\cpp\Maths\Vectors\Vec3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Code\Source\Graphics\Buffers\VertexArray.cpp">
+    <ClCompile Include="Source\Code\cpp\Maths\Vectors\Vec4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Code\cpp\Graphics\Renderers\Renderable2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Code\cpp\Graphics\Renderers\2DRenderer_S.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -87,6 +93,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Code\Header\Graphics\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderable2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderer2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Renderers\2DRenderer_S.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

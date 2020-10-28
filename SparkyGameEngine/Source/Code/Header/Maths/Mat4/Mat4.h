@@ -36,7 +36,35 @@ namespace Sparky {
 			mat4& operator*=(const mat4& other);
 
 			//Projection
+
+			/*
+			* Orthographic(float left, float right, float bottom, float top, float near, float far)
+			* 
+			* @param left 
+			* 
+			* @param right
+			* 
+			* @param bottom
+			* 
+			* @param top
+			* 
+			* @param near
+			* 
+			* @param far
+			*/
 			static mat4 Orthographic(float left, float right, float bottom, float top, float near, float far);
+
+			/*
+			* Perspective(float fov, float aspectRatio, float near, float far)
+			* 
+			* @param fov
+			* 
+			* @param aspectRatio
+			* 
+			* @param near
+			* 
+			* @param far
+			*/
 			static mat4 Perspective(float fov, float aspectRatio, float near, float far);
 
 			//Translation Matricies

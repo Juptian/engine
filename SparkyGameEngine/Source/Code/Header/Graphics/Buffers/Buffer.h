@@ -19,13 +19,13 @@ namespace Sparky
 
 			/*
 			* Buffer(GLfloat* data, GLsizei count, GLuint componentCount)
-			* Buffer constructor.
 			* 
 			* @param data Float array containing verticies
 			* 
 			* @param count Count of the items
 			* 
 			* @param componentCount Count of the components (ie a 3x4 array would be: Buffer(Name, 3, 4))
+			* 
 			*/
 			Buffer(GLfloat* data, GLsizei count, GLuint componentCount);
 			
