@@ -139,7 +139,7 @@ namespace Sparky {
 			win->m_MouseX = xpos;
 			win->m_MouseY = ypos;
 		}
-		void Window::GetMousePosition(double& x, double& y) const
+		void Window::GetMousePosition(OUT double& x, OUT double& y) const
 		{
 			x = m_MouseX;
 			y = m_MouseY;

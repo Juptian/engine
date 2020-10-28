@@ -16,10 +16,16 @@ namespace Sparky
 			GLuint m_ComponentCount; //The type (vec2, vec3, vec4)
 
 		public:
+
 			/*
 			* Buffer(GLfloat* data, GLsizei count, GLuint componentCount)
-			* @param data
-			* Float containing data
+			* Buffer constructor.
+			* 
+			* @param data Float array containing verticies
+			* 
+			* @param count Count of the items
+			* 
+			* @param componentCount Count of the components (ie a 3x4 array would be: Buffer(Name, 3, 4))
 			*/
 			Buffer(GLfloat* data, GLsizei count, GLuint componentCount);
 			

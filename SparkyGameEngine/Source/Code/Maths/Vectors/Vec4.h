@@ -16,27 +16,19 @@ namespace Sparky {
 
 		//Methods/Functions
 		public:
-			/*
-			* Vector4()
-			* Vector 4 constructor where the `X`, `Y`, `Z`, and `W` values are set to 0
-			*/
 			vec4() = default;
 
 			/*
 			* Vector3(const float& x, const float& y, const float& z, const float& w)
 			* Vector 3 constructor where you can assign the X, Y, Z, and W values
 			* 
-			* @param x 
-			* Value of the `X` axis
+			* @param x Value of the `X` axis
 			* 
-			* @param y 
-			* Value of the `Y` axis
+			* @param y Value of the `Y` axis
 			* 
-			* @param z
-			* Value of the `Z` axis
+			* @param z Value of the `Z` axis
 			* 
-			* @param w 
-			* Value of the `W` axis
+			* @param w Value of the `W` axis
 			*/
 			vec4(const float& x, const float& y, const float& z, const float& w);
 			

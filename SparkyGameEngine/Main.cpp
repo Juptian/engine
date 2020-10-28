@@ -1,6 +1,7 @@
 //Header files
 #include "Source\Code\Maths\Math.h"
 #include "Source\Code\Graphics\Graphics.h"
+#include "Source\Code\Graphics\Window.h"
 
 
 //Libraries

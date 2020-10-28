@@ -26,11 +26,10 @@ namespace Sparky {
 			/*
 			* Vector2(const float& x, const float& y)
 			* Vector 2 constructor where you can assign the `X` and `Y` values
-			* @param x 
-			* Value of the `X` axis
 			* 
-			* @param y 
-			* Value of the `Y` axis
+			* @param x Value of the `X` axis
+			* 
+			* @param y Value of the `Y` axis
 			*/
 			vec2(const float& x, const float& y);
 			

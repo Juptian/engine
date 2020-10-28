@@ -10,7 +10,7 @@ namespace Sparky
 		}
 		VertexArray::~VertexArray()
 		{
-			for (int i = 0; i < m_Buffers.size(); i++)
+			for (unsigned int i = 0; i < m_Buffers.size(); i++)
 			{
 				delete m_Buffers[i];
 			}

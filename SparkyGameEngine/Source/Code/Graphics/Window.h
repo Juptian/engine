@@ -4,6 +4,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#define OUT 
+
 namespace Sparky
 {
 	namespace Graphics
@@ -39,9 +41,34 @@ namespace Sparky
 			void Update();
 
 			//Static
+			/*
+			* IsKeyPressed(unsigned int keycode)
+			* 
+			* @param keycode Code for the key they would like to check
+			* 
+			* @return Returns true/false based on wether that key is pressed
+			*/
 			bool IsKeyPressed(unsigned int keycode) const;
+
+			/*
+			* IsMouseButtonPressed(unsigned int button)
+			*
+			* @param Button Code for the Mouse Button they would like to check
+			*
+			* @return Returns true/false based on wether that button is pressed
+			*/
 			bool IsMouseButtonPressed(unsigned int button) const;
-			void GetMousePosition(double &x, double &y) const;
+
+			/*
+			* GetMousePosition(double &x, double &y
+			*
+			* @param X Mouse position on the X Axis
+			*
+			* @param Y Mouse position on the Y axis
+			* 
+			* @return Returns the mouse position on the X and Y axis
+			*/
+			void GetMousePosition(OUT double &x, OUT double &y) const;
 
 		private:
 			bool Init();

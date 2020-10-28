@@ -17,6 +17,15 @@ namespace Sparky {
 			GLuint m_Count;
 
 		public:
+
+			/*
+			* IndexBuffer(GLushort* data, GLsizei count)
+			* IndexBuffer constructor
+			* 
+			* @param data Unsigned short containing Indicies
+			* 
+			* @param count 
+			*/
 			IndexBuffer(GLushort* data, GLsizei count);
 
 			inline GLuint GetCount() const { return m_Count; }
