@@ -1,6 +1,9 @@
 #pragma once
 
+//Utilities
 #include "..\Utilities\Utilities.h"
+
+//Shader
 #include "Shader.h"
 
 //Buffers
@@ -10,6 +13,5 @@
 
 //Renderers
 #include "Renderers\Renderable2D.h"
-#include "Renderers\Renderer2D.h"
 
 using namespace Sparky::Graphics;

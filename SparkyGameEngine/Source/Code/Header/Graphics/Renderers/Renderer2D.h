@@ -1,13 +1,15 @@
 #pragma once
 
-#include "Renderable2D.h"
+#include "../Graphics.h"
 
-namespace Sparly {
-	namespace Graphics {
+namespace Sparky
+{
+	namespace Graphics
+	{
 		class Renderer2D
 		{
 		public:
-			virtual void Submit(const Renderer2D& renderable)= 0;
+			virtual void Submit(const Renderable2D* renderable) = 0;
 			virtual void Flush() = 0;
 		};
 	}

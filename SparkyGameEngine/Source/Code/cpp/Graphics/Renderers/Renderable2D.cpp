@@ -1,10 +1,12 @@
 #include "../../../Header/Graphics/Renderers/Renderable2D.h"
 
 
-namespace Sparly {
-	namespace Graphics {
-		Renderable2D::Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader* shader)
-			: m_Position(position), m_Size(size), m_Colour(color), m_Shader(shader);
+namespace Sparky 
+{
+	namespace Graphics 
+	{
+		Renderable2D::Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader& shader)
+			: m_Position(position), m_Size(size), m_Colour(color), m_Shader(shader)
 		{
 			m_VertexArray = new VertexArray();
 
@@ -29,9 +31,9 @@ namespace Sparly {
 
 			GLushort indicies[] =
 			{
-				0, 1, 2
+				0, 1, 2,
 				2, 3, 0
-			}
+			};
 
 			m_IndexBuffer = new IndexBuffer(indicies, 6);
 		}

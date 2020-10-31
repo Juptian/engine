@@ -1,19 +1,23 @@
 #pragma once
 
-#include <deque>
 #include "../Graphics.h"
-#include "../../Maths/Math.h"
 #include "Renderer2D.h"
-
 
 namespace Sparky
 {
 	namespace Graphics
 	{
-		class Simple2DRenderer : public Renderer2D
+		class BatchRenderer2D : public Renderer2D
 		{
+		//Variables
 		private:
-			std::deque<const Renderable2D*> m_RenderQueue;
+			VertexArray m_VAO;
+			GLuint m_VBO, m_IBO;
+
+		public:
+
+		//Functions
+		private:
 
 		public:
 			void Submit(const Renderable2D* renderable) override;

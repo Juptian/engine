@@ -4,22 +4,24 @@
 #include "../../Maths/Math.h"
 
 
-namespace Sparly {
-	namespace Graphics {
+namespace Sparky
+{
+	namespace Graphics
+	{
 		class Renderable2D
 		{
 		protected:
 			//Vectors
-			Vector2 m_Size;
-			Vector3 m_Position;
-			Vector4 m_Colour;
+			vec2 m_Size;
+			vec3 m_Position;
+			vec4 m_Colour;
 
 			//Shader
-			Shader *m_Shader;
+			Shader& m_Shader;
 
 			//Buffers
-			VertexArray *m_VertexArray;
-			IndexBuffer *m_IndexBuffer;
+			VertexArray* m_VertexArray;
+			IndexBuffer* m_IndexBuffer;
 
 		public:
 			
@@ -34,12 +36,13 @@ namespace Sparly {
 			* 
 			* @param shader Shader of the object
 			*/
-			Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader* shader);
+			Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader& shader);
 			virtual ~Renderable2D();
 
-			inline const VertexArray* GetVAO() { return m_VertexArray; }
-			inline const IndexBuffer* GetIBO() { return m_IndexBuffer; }
-			inline Shader* GetShader() const { return m_Shader; }
+			inline const VertexArray* GetVAO() const { return m_VertexArray; }
+			inline const IndexBuffer* GetIBO() const { return m_IndexBuffer; }
+
+			inline Shader& GetShader() const { return m_Shader; }
 
 			inline const Vector3& GetPosition() const { return m_Position; }
 			inline const Vector2& GetSize() const { return m_Size; }
