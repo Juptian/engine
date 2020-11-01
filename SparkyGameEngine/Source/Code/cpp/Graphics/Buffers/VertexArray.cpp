@@ -14,6 +14,7 @@ namespace Sparky
 			{
 				delete m_Buffers[i];
 			}
+			glDeleteVertexArrays(1, &m_ArrayID);
 		}
 
 		void VertexArray::AddBuffer(Buffer* buffer, GLuint index)

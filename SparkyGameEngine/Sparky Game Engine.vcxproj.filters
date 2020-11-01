@@ -57,6 +57,9 @@
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\2DRenderer_S.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Code\cpp\Graphics\Renderers\BatchRenderer2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Code\Header\Utilities\Utilities.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\2DRenderer_S.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Renderers\BatchRenderer2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

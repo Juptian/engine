@@ -148,6 +148,7 @@
     <ClCompile Include="Source\Code\cpp\Graphics\Buffers\Buffer.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Buffers\IndexBuffer.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Buffers\VertexArray.cpp" />
+    <ClCompile Include="Source\Code\cpp\Graphics\Renderers\BatchRenderer2D.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\Renderable2D.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\2DRenderer_S.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Shader.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Source\Code\Header\Graphics\Buffers\VertexArray.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Graphics.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\2DRenderer_S.h" />
+    <ClInclude Include="Source\Code\Header\Graphics\Renderers\BatchRenderer2D.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderable2D.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderer2D.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Shader.h" />

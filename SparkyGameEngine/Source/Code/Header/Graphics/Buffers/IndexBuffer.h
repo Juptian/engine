@@ -27,6 +27,7 @@ namespace Sparky {
 			* @param count 
 			*/
 			IndexBuffer(GLushort* data, GLsizei count);
+			~IndexBuffer();
 
 			inline GLuint GetCount() const { return m_Count; }
 

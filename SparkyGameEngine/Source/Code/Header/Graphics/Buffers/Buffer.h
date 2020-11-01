@@ -28,6 +28,7 @@ namespace Sparky
 			* 
 			*/
 			Buffer(GLfloat* data, GLsizei count, GLuint componentCount);
+			~Buffer();
 			
 			inline GLuint GetComponentCount() const { return m_ComponentCount; }
 

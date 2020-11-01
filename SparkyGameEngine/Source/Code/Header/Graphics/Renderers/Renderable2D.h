@@ -16,12 +16,6 @@ namespace Sparky
 			vec3 m_Position;
 			vec4 m_Colour;
 
-			//Shader
-			Shader& m_Shader;
-
-			//Buffers
-			VertexArray* m_VertexArray;
-			IndexBuffer* m_IndexBuffer;
 
 		public:
 			
@@ -36,13 +30,8 @@ namespace Sparky
 			* 
 			* @param shader Shader of the object
 			*/
-			Renderable2D(Vector3 position, Vector2 size, Vector4 color, Shader& shader);
+			Renderable2D(Vector3 position, Vector2 size, Vector4 color);
 			virtual ~Renderable2D();
-
-			inline const VertexArray* GetVAO() const { return m_VertexArray; }
-			inline const IndexBuffer* GetIBO() const { return m_IndexBuffer; }
-
-			inline Shader& GetShader() const { return m_Shader; }
 
 			inline const Vector3& GetPosition() const { return m_Position; }
 			inline const Vector2& GetSize() const { return m_Size; }

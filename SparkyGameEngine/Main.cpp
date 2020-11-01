@@ -20,7 +20,7 @@ int main()
 	using namespace Graphics;
 	using namespace Math;
 
-	Window window("Sparky", 960, 540);
+	Window window("Sparky", 1920, 1080);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 	mat4 ortho = mat4::Orthographic(0.0f, 16.0f, 0.0f, 9.0f, -1.0f, 1.0f);
@@ -48,7 +48,7 @@ int main()
 		if (lightFollow)
 		{
 			window.GetMousePosition(x, y);
-			shader.SetUniform2f("light_pos", vec2(float(x * 16.0f / 960.0f), float(9.0f - y * 9.0f / 540.0f)));
+			shader.SetUniform2f("light_pos", vec2(float(x * 16.0f / 1920.0f), float(9.0f - y * 9.0f / 1080.f)));
 		}
 		
 		renderer.Submit(&Sprite1);

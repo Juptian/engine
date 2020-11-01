@@ -6,6 +6,12 @@ namespace Sparky
 {
 	namespace Graphics
 	{
+		struct VertexData
+		{
+			Vector3 vertex;
+			Vector4 colours;
+		}; //28 bytes of memory
+
 		class Renderer2D
 		{
 		public:
