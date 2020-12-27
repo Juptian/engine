@@ -33,13 +33,20 @@ int main()
 
 	shader.SetUniform4f("color", vec4(1, 1, 1, 1)); // vec4(0.3f, 0.7f, 1.0f, 1.0f)
 
-	Renderable2D Sprite1(vec3(5, 5, 0), vec2(4, 4), vec4(1, 0, 1, 1), shader);
-	Renderable2D Sprite2(vec3(7, 1, 0), vec2(2, 3), vec4(0.2f, 0, 1, 1), shader);
+	//Renderable2D Sprite1(vec3(5, 5, 0), vec2(4, 4), vec4(1, 0, 1, 1), shader);
+	//Renderable2D Sprite2(vec3(7, 1, 0), vec2(2, 3), vec4(0.2f, 0, 1, 1), shader);
 
 	Simple2DRenderer renderer;
 
 	bool lightFollow = true;
 	double x, y;
+
+	Vec3 foo = Vec3(1, 1, 1);
+	std::cout << foo << "\n";
+	Vec3 bar = Vec3(2, 2, 2);
+	std::cout << bar << "\n";
+	Vec3 foobar = foo + bar;
+	std::cout << foobar << "\n";
 
 	while (!window.Closed())
 	{

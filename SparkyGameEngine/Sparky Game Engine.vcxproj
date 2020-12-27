@@ -152,6 +152,8 @@
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\Renderable2D.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\2DRenderer_S.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Shader.cpp" />
+    <ClCompile Include="Source\Code\cpp\Graphics\Sprites\Sprite.cpp" />
+    <ClCompile Include="Source\Code\cpp\Graphics\Sprites\Static_Sprite.cpp" />
     <ClCompile Include="Source\Code\cpp\Graphics\Window.cpp" />
     <ClCompile Include="Source\Code\cpp\Maths\Math4\Mat4.cpp" />
     <ClCompile Include="Source\Code\cpp\Maths\Vectors\Vec2.cpp" />
@@ -159,6 +161,7 @@
     <ClCompile Include="Source\Code\cpp\Maths\Vectors\Vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Code\Header\Graphics\Sprites\Sprite.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Buffers\Buffer.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Buffers\IndexBuffer.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Buffers\VertexArray.h" />
@@ -168,6 +171,7 @@
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderable2D.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\Renderer2D.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Shader.h" />
+    <ClInclude Include="Source\Code\Header\Graphics\Sprites\Static_Sprite.h" />
     <ClInclude Include="Source\Code\Header\Graphics\Window.h" />
     <ClInclude Include="Source\Code\Header\Maths\Mat4\Mat4.h" />
     <ClInclude Include="Source\Code\Header\Maths\Math.h" />

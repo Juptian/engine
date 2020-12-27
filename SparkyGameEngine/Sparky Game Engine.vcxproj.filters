@@ -60,6 +60,12 @@
     <ClCompile Include="Source\Code\cpp\Graphics\Renderers\BatchRenderer2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Code\cpp\Graphics\Sprites\Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Code\cpp\Graphics\Sprites\Static_Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Code\Header\Utilities\Utilities.h">
@@ -108,6 +114,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Code\Header\Graphics\Renderers\BatchRenderer2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Sprites\Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Code\Header\Graphics\Sprites\Static_Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
